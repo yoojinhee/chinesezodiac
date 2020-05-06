@@ -15,14 +15,7 @@ namespace chinesezodiac
 
             Console.Write("태어난 년도 입력 : ");
             int year = int.Parse(Console.ReadLine());
-
-            for(int i=0;i<12; i++)
-            {
-                if (year % 12 == i)
-                {
-                    Console.WriteLine(cz[i]); break;
-                }
-            }
+            Console.WriteLine(cz[year % 12]);
         }
     }
 }
